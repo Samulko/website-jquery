@@ -18,16 +18,14 @@ $(document).ready(function() {
   });
 
   // Load content for "Work" link
-  $("main").load("work.html");
+  $("main").load("index.html");
 });
 
 // Add click event listener for project thumbnail links
 $(document).on("click", ".col a", function(e) {
   e.preventDefault();
   var projectPage = $(this).attr("href");
-  $("main").load("project/project-layout.html", function() {
-    $("header").load("header.html");
-    $("main").load(projectPage);
+  $("main").load(projectPage, function() {
     // Update the page title dynamically
     $.ajax({
       url: projectPage,
