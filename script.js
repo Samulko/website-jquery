@@ -7,33 +7,13 @@ $(document).ready(function() {
       $("nav ul li").removeClass("active");
       // Add "active" class to clicked navigation link
       $(this).parent().addClass("active");
-      // Load content for clicked link using AJAX
-      var page = $(this).attr("href");
-      if (page !== "#") {
-        $("main").load(page);
-      }
-      // Prevent default link behavior
-      return false;
     });
   });
-
-  // Load content for "Work" link
-  $("main").load("index.html");
 });
 
 // Add click event listener for project thumbnail links
 $(document).on("click", ".col a", function(e) {
   e.preventDefault();
   var projectPage = $(this).attr("href");
-  $("main").load(projectPage, function() {
-    // Update the page title dynamically
-    $.ajax({
-      url: projectPage,
-      dataType: "html",
-      success: function(data) {
-        var title = $(data).filter("title").text();
-        $("head title").text(title);
-      }
-    });
-  });
+  window.location.href = projectPage;
 });
