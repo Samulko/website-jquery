@@ -1,0 +1,143 @@
+Index.html:
+
+doctype: html
+html:
+  head:
+    - title: "My Work - Architecture Portfolio"
+    - link: 
+      - rel: "stylesheet"
+        type: "text/css"
+        href: "static/style.css"
+      - rel: "stylesheet"
+        href: "static/modal.css"
+    - meta: 
+      - name: "viewport"
+        content: "width=device-width, initial-scale=1.0"
+      - charset: "UTF-8"
+    - script: 
+      - src: "https://code.jquery.com/jquery-3.6.0.min.js"
+      - src: "script.js"
+
+  body:
+    - header: 
+    - div:
+      - class: "switch-container"
+      - button: 
+        - class: "switch-btn"
+        - text: "View as: GRID"
+    - main:
+      - div:
+        - class: "projects-list list-view"
+        - col: 
+          - class: "project-container"
+          - list of images (with alt and class)
+          - button: 
+            - class: "arrow-left"
+            - text: "●"
+          - button: 
+            - class: "arrow-right"
+            - text: "●"
+          - a: 
+            - href: "project link"
+            - p: "project description"
+    - div:
+      - id: "myModal"
+      - class: "modal"
+      - span: 
+        - class: "close"
+        - text: "&times;"
+      - img: 
+        - class: "modal-content"
+        - id: "fullQualityImage"
+      - button: 
+        - class: "arrow-left"
+        - text: "●"
+      - button: 
+        - class: "arrow-right"
+        - text: "●"
+
+*In the main part of the body, there are many similar elements which are repeated with different data. To make the pseudo-code simpler, I condensed these into "list of images (with alt and class)" and similar labels. This pseudo-code reflects the structure of your HTML, but does not capture all the details of the content, since those details would require a more verbose representation.*
+
+
+
+
+
+index-grid.html:
+
+doctype: html
+html:
+  head:
+    - title: "My Work - Architecture Portfolio"
+    - link: 
+      - rel: "stylesheet"
+        type: "text/css"
+        href: "static/style.css"
+    - meta: 
+      - name: "viewport"
+        content: "width=device-width, initial-scale=1.0"
+    - script: 
+      - src: "https://code.jquery.com/jquery-3.6.0.min.js"
+      - src: "script.js"
+
+  body:
+    - header: 
+    - div:
+      - class: "switch-container"
+      - button: 
+        - class: "switch-btn"
+        - text: "View as: LIST"
+    - main:
+      - div:
+        - class: "projects-grid"
+        - list of cols:
+          - each col includes: 
+            - a: 
+              - href: "project link"
+              - class: "project-link"
+              - div: 
+                - class: "project-img-container"
+                - img:
+                  - src: "image source"
+                  - alt: "image alt text"
+                  - class: "index-img"
+              - p: "project description"
+
+*Again, in the main part of the body, there are many similar elements which are repeated with different data. To make the pseudo-code simpler, I condensed these into "list of cols" and "each col includes". This pseudo-code reflects the structure of your HTML, but does not capture all the details of the content, since those details would require a more verbose representation.*
+
+
+
+
+
+info.html:
+
+doctype: html
+html:
+  head:
+    - title: "My Info - Architecture Portfolio"
+    - link: 
+      - rel: "stylesheet"
+        type: "text/css"
+        href: "static/style.css"
+    - meta: 
+      - name: "viewport"
+        content: "width=device-width, initial-scale=1.0"
+    - script: 
+      - src: "https://code.jquery.com/jquery-3.6.0.min.js"
+      - src: "script.js"
+
+  body:
+    - header: 
+    - main:
+      - div:
+        - h1: "Info Page"
+        - p: "This is the info page of the website."
+        - h1: "Biography"
+        - p: "Student at TU Delft. Finishing in June of 2023."
+        - h2: "Experience"
+        - h2: "Exhibitions"
+        - h1: "CV"
+        - p: "link for CV, maybe extendable page where you can see it"
+        - h1: "CV"
+        - p: "link for CV, maybe extendable page where you can see it"
+
+

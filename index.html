@@ -1,107 +1,208 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My Work - Architecture Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="static/style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="script.js"></script>
+    <title>My Work - Architecture Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <link rel="stylesheet" href="static/modal.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script.js"></script>
 </head>
 <body>
     
 <header></header>
+
+    <div class="switch-container ">
+      <button class="switch-btn">View as: GRID</button>
+    </div>
     
     <main>
 
-        <div class="projects-grid">
+        <div class="projects-list list-view">
 
-        <div class="col">
-            <a href="project/project-hypar.html" class="project-link">
+            <div class="col project-container">
+
                 <div class="project-img-container">
-                    <img src="./images/hypar001.jpg" alt="project 1" class="index-img">
+                    <img src="./images/hypar001.jpg" alt="project 1" data-index="0" class="selected-image">
+                    <img src="./images/hypar002.jpg" alt="project 1" data-index="1" class="hidden-image">
+                    <img src="./images/hypar014.jpg" alt="project 1" data-index="2" class="hidden-image">
+                    <img src="./images/hypar011.jpg" alt="project 1" data-index="3" class="hidden-image">
+                    <img src="./images/hypar012.jpg" alt="project 1" data-index="4" class="hidden-image">
+                    <img src="./images/hypar005.jpg" alt="project 1" data-index="5" class="hidden-image">
+                    <img src="./images/hypar013.jpg" alt="project 1" data-index="6" class="hidden-image">
+                    <button class="arrow-left">●</button>
+                    <button class="arrow-right">●</button>
                 </div>
-                <p>Hypar - Light-weight pavillion</p>
-            </a>
+                <a href="project/project-hypar.html" class="project-link">
+                    <p>Hypar - Light-weight pavillion</p>
+                </a>
+              </div>
+              
+
+        <div class="col project-container">
+                <div class="project-img-container">
+                    <img src="./images/emerson008.jpg" alt="project 2" data-index="0" class="selected-image">
+                    <img src="./images/emerson005.jpg" alt="project 2" data-index="1" class="hidden-image">
+                    <img src="./images/emerson007.jpg" alt="project 2" data-index="2" class="hidden-image">
+                    <img src="./images/emerson002.jpg" alt="project 2" data-index="3" class="hidden-image">
+                    <img src="./images/emerson003.jpg" alt="project 2" data-index="4" class="hidden-image">
+                    <img src="./images/emerson004.jpg" alt="project 2" data-index="5" class="hidden-image">
+                    <img src="./images/emerson006.jpg" alt="project 2" data-index="6" class="hidden-image">
+                    <button class="arrow-left">●</button> <!-- Add this line for the left arrow button -->
+                    <button class="arrow-right">●</button> <!-- Add this line for the right arrow button -->
+                </div>
+                <a href="project/project-emerson.html" class="project-link">
+                    <p>Continuation of Limat waterfront - Studio Tom Emerson</p>
+                </a>
         </div>
 
-        <div class="col">
-            <a href="project/project-emerson.html" class="project-link">
+        <div class="col project-container">
                 <div class="project-img-container">
-                    <img src="./images/emerson001.jpg" alt="project 2" class="index-img">
+                    <img src="./images/gibraltar003.jpg" alt="project 3" data-index="0" class="selected-image">
+                    <img src="./images/gibraltar001.jpg" alt="project 3" data-index="1" class="hidden-image">
+                    <img src="./images/gibraltar002.jpg" alt="project 3" data-index="2" class="hidden-image">
+                    <img src="./images/gibraltar004.jpg" alt="project 3" data-index="3" class="hidden-image">
+                    <img src="./images/gibraltar005.jpg" alt="project 3" data-index="4" class="hidden-image">
+                    <img src="./images/gibraltar006.jpg" alt="project 3" data-index="5" class="hidden-image">
+                    <button class="arrow-left">●</button> <!-- Add this line for the left arrow button -->
+                    <button class="arrow-right">●</button> <!-- Add this line for the right arrow button -->
                 </div>
-                <p>Continuation of Limat waterfront - Studio Tom Emerson</p>
-            </a>
+                <a href="project/project-gibraltar.html" class="project-link">
+                    <p>Bank of Gibraltar - Studio of Borders and Territories</p>
+                </a>
         </div>
 
-        <div class="col">
-            <a href="project/project-gibraltar.html" class="project-link">
+        <div class="col project-container">
                 <div class="project-img-container">
-                    <img src="./images/gibraltar003.jpg" alt="project 3" class="index-img">
+                    <img src="./images/lightLand007.jpg" alt="project 4" data-index="0" class="selected-image">
+                    <img src="./images/lightLand001.jpg" alt="project 4" data-index="1" class="hidden-image">
+                    <img src="./images/lightLand002.jpg" alt="project 4" data-index="2" class="hidden-image">
+                    <img src="./images/lightLand003.jpg" alt="project 4" data-index="3" class="hidden-image">
+                    <img src="./images/lightLand004.jpg" alt="project 4" data-index="4" class="hidden-image">
+                    <img src="./images/lightLand005.jpg" alt="project 4" data-index="5" class="hidden-image">
+                    <img src="./images/lightLand006.jpg" alt="project 4" data-index="6" class="hidden-image">
+                    <button class="arrow-left">●</button> <!-- Add this line for the left arrow button -->
+                    <button class="arrow-right">●</button> <!-- Add this line for the right arrow button -->
                 </div>
-                <p>Bank of Gibraltar - Studio of Borders and Territories</p>
-            </a>
+                <a href="project/project-lightLand.html" class="project-link">
+                    <p>Sand landscape shaped by light</p>
+                </a>
         </div>
-        <div class="col">
+
+        <div class="col project-container">
+            <div class="project-img-container">
+                <img src="./images/earth001.jpg" alt="project 5" data-index="0" class="selected-image">
+                <img src="./images/earth004.jpg" alt="project 5" data-index="1" class="hidden-image">
+                <img src="./images/earth006.jpg" alt="project 5" data-index="2" class="hidden-image">
+                <img src="./images/earth005.jpg" alt="project 5" data-index="3" class="hidden-image">
+                <img src="./images/earth007.jpg" alt="project 5" data-index="4" class="hidden-image">
+                <img src="./images/earth002.jpg" alt="project 5" data-index="5" class="hidden-image">
+                <img src="./images/earth003.jpg" alt="project 5" data-index="6" class="hidden-image">
+                <button class="arrow-left">●</button> <!-- Add this line for the left arrow button -->
+                <button class="arrow-right">●</button> <!-- Add this line for the right arrow button -->
+            </div>
             <a href="project/project-lightLand.html" class="project-link">
-                <div class="project-img-container">
-                    <img src="./images/lightLand007.jpg" alt="project 4" class="index-img">
-                </div>
-                <p>Sand landscape shaped by light</p>
+                <p>Design proposal for a double-house made through robotic-shotearth process</p>
             </a>
-        </div>
-        <div class="col">
-            <a href="project/project-datacle.html" class="project-link">
+    </div>
+        <div class="col project-container">
                 <div class="project-img-container">
-                    <img src="./images/datacle002.jpg" alt="project 5" class="index-img">
+                    <img src="./images/datacle002.jpg" alt="project 6" data-index="0" class="selected-image">
+                    <img src="./images/datacle007.jpg" alt="project 6" data-index="1" class="hidden-image">
+                    <img src="./images/datacle009.jpg" alt="project 6" data-index="2" class="hidden-image">
+                    <button class="arrow-left">●</button> <!-- Add this line for the left arrow button -->
+                    <button class="arrow-right">●</button> <!-- Add this line for the right arrow button -->
                 </div>
-                <p>Datacle - project exploring de-centralized datacentres in center of urban environments</p>
-            </a>
-        </div>
-
-        <div class="col">
-            <a href="project/project-woodwind.html" class="project-link">
-                <div class="project-img-container">
-                    <img src="./images/woodwind009.jpg" alt="project 6" class="index-img">
-                </div>
-                <p>Interactive ferry terrminals</p>
-            </a>
+                <a href="project/project-datacle.html" class="project-link">
+                    <p>Datacle - project exploring de-centralized datacentres in center of urban environments</p>
+                </a>
         </div>
 
-        <div class="col">
-            <a href="project/project-object.html" class="project-link">
+        <div class="col project-container">
                 <div class="project-img-container">
-                    <img src="./images/object005.jpg" alt="project 7" class="index-img">
+                    <img src="./images/woodwind009.jpg" alt="project 7" data-index="0" class="selected-image">
+                    <img src="./images/woodwind003.jpg" alt="project 7" data-index="1" class="hidden-image">
+                    <img src="./images/woodwind004.jpg" alt="project 7" data-index="2" class="hidden-image">
+                    <img src="./images/woodwind005.jpg" alt="project 7" data-index="3" class="hidden-image">
+                    <img src="./images/woodwind006.jpg" alt="project 7" data-index="4" class="hidden-image">
+                    <img src="./images/woodwind007.jpg" alt="project 7" data-index="5" class="hidden-image">
+                    <button class="arrow-left">●</button> <!-- Add this line for the left arrow button -->
+                    <button class="arrow-right">●</button> <!-- Add this line for the right arrow button -->
                 </div>
-                <p>Objects of the Mundane - Summer-school by UCL in Madrid</p>
-            </a>
+                <a href="project/project-woodwind.html" class="project-link">
+                    <p>Interactive ferry terrminals</p>
+                </a>
         </div>
 
-        <div class="col">
-            <a href="project/project-microlab.html" class="project-link">
+        <div class="col project-container">
                 <div class="project-img-container">
-                    <img src="./images/microlab006.jpg" alt="project 8" class="index-img">                         
+                    <img src="./images/object005.jpg" alt="project 8" data-index="0" class="selected-image">
+                    <img src="./images/object001.jpg" alt="project 8" data-index="1" class="hidden-image">
+                    <img src="./images/object002.jpg" alt="project 8" data-index="2" class="hidden-image">
+                    <img src="./images/object003.jpg" alt="project 8" data-index="3" class="hidden-image">
+                    <img src="./images/object006.jpg" alt="project 8" data-index="4" class="hidden-image">
+                    <img src="./images/object007.jpg" alt="project 8" data-index="5" class="hidden-image">
+                    <img src="./images/object008.jpg" alt="project 8" data-index="6" class="hidden-image">
+                    <img src="./images/object009.jpg" alt="project 8" data-index="7" class="hidden-image">
+                    <img src="./images/object010.jpg" alt="project 8" data-index="8" class="hidden-image">
+                    <button class="arrow-left">●</button> <!-- Add this line for the left arrow button -->
+                    <button class="arrow-right">●</button> <!-- Add this line for the right arrow button -->
                 </div>
-            <p>Refurbisment of an industrial building into student housing</p></a>
+                <a href="project/project-object.html" class="project-link">
+                    <p>Objects of the Mundane - Summer-school by UCL in Madrid</p>
+                </a>
         </div>
 
-        <div class="col">
-            <a href="project/project-griendtsveen.html" class="project-link">
+        <div class="col project-container">
                 <div class="project-img-container">
-                    <img src="./images/griendtsveen002.jpg" alt="project 9" class="index-img">
+                    <img src="./images/microlab006.jpg" alt="project 9" data-index="0" class="selected-image">
+                    <img src="./images/microlab009.jpg" alt="project 9" data-index="1" class="hidden-image">
+                    <img src="./images/microlab001.jpg" alt="project 9" data-index="2" class="hidden-image">
+                    <img src="./images/microlab002.jpg" alt="project 9" data-index="3" class="hidden-image">
+                    <img src="./images/microlab007.jpg" alt="project 9" data-index="4" class="hidden-image"> 
+                    <button class="arrow-left">●</button> <!-- Add this line for the left arrow button -->
+                    <button class="arrow-right">●</button> <!-- Add this line for the right arrow button -->                      
                 </div>
-            <p>Urban study for Greiendtsveen aimed on reconstructing ecology of the peat bogs</p></a>
+                <a href="project/project-microlab.html" class="project-link">
+                    <p>Refurbisment of an industrial building into student housing</p>
+                </a>
         </div>
 
-        <div class="col">
-            <a href="project/project-library.html" class="project-link">
+        <div class="col project-container">
                 <div class="project-img-container">
-                    <img src="./images/library002.jpg" alt="project 10" class="index-img">
+                    <img src="./images/griendtsveen002.jpg" alt="project 10" data-index="0" class="selected-image">
+                    <img src="./images/griendtsveen001.jpg" alt="project 10" data-index="1" class="hidden-image">
+                    <button class="arrow-left">●</button> <!-- Add this line for the left arrow button -->
+                    <button class="arrow-right">●</button> <!-- Add this line for the right arrow button -->
                 </div>
-            <p>Design library in the centre of Eindhoven</p></a>
+                <a href="project/project-griendtsveen.html" class="project-link">
+                    <p>Urban study for Greiendtsveen aimed on reconstructing ecology of the peat bogs</p>
+                </a>
+        </div>
+
+        <div class="col project-container">
+                <div class="project-img-container">
+                    <img src="./images/library002.jpg" alt="project 11" data-index="0" class="selected-image">
+                    <img src="./images/library001.jpg" alt="project 11" data-index="1" class="hidden-image">
+                    <img src="./images/library004.jpg" alt="project 11" data-index="2" class="hidden-image">
+                    <button class="arrow-left">●</button> <!-- Add this line for the left arrow button -->
+                    <button class="arrow-right">●</button> <!-- Add this line for the right arrow button -->
+                </div>
+                <a href="project/project-library.html" class="project-link">
+                    <p>Design library in the centre of Eindhoven</p>
+                </a>
         </div>
 
         </div>
     </main>
 
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="fullQualityImage">
+        <button class="arrow-left">●</button> <!-- Add this line for the left arrow button -->
+        <button class="arrow-right">●</button> <!-- Add this line for the right arrow button -->
+    </div>    
+      
 </body>
 </html>

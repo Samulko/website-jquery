@@ -70,3 +70,56 @@
 .project-img-container:hover .arrow-right {
   opacity: 1;
 }
+
+.arrow-left,
+.arrow-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  font-size: 3rem; /* Increased font size */
+  cursor: pointer;
+  color: red; /* Added text color */
+  opacity: 0; /* Make the circles initially invisible */
+  transition: background-color 2s, opacity .3s; /* Added transition for opacity */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+  opacity: 1; /* Increased opacity on hover */
+}
+
+.arrow-left {
+  left: 1rem;
+}
+
+.arrow-right {
+  right: 1rem;
+}
+.modal:hover .arrow-left,
+.modal:hover .arrow-right {
+  opacity: 1;
+}
+
+
+@media screen and (max-width: 576px) {
+  .modal-content {
+    flex-basis: calc(50% - 20px);
+    margin: 10px;
+  }
+}
+
+/* Add media queries for responsiveness */
+@media screen and (max-width: 576px) {
+  .modal-content {
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+

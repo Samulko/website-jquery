@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Project Page</title>
+	<link rel="stylesheet" type="text/css" href="../static/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="../script.js"></script>
 </head>
+	  
+	  
+
 <body>
-	<div>
-        <h1>Title Hypar</h1>
-		<p>main image</p>
-		<p>Description (maybe include an option for 'read more/less')</p>
-		<p>secondary images</p>
-		<p>Details: Location, date, institution, course, ...</p>
-	</div>
+
+<header></header>
+
+  <div class="project-main">
+    <img src="../images/hypar001.jpg" alt="../images/hypar001.jpg">
+  </div>
+  <div class="project-description">
+    <p class="description-short">Short description here...</p>
+    <p class="description-long hidden">Long description here...</p>
+    <button class="read-more-btn">Read More</button>
+  </div>
+  <div class="project-secondary-images">
+    <img src="../images/hypar002.jpg" alt="../images/hypar004.jpg">
+    <img src="../images/hypar003.jpg" alt="../images/hypar006.jpg">
+    <!-- Add more secondary images as needed -->
+  </div>
+  <div class="project-details">
+    <p>Location: <span class="location">Location here</span></p>
+    <p>Date: <span class="date">Date here</span></p>
+    <p>Institution: <span class="institution">Institution here</span></p>
+    <p>Course: <span class="course">Course here</span></p>
+    <!-- Add more details as needed -->
+  </div>
+  <script src="../script.js"></script>
 </body>
 </html>
